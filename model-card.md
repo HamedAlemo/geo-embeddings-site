@@ -7,7 +7,7 @@ description: Model card format for geo-embeddings.
 This modelcard is adopted from Hugging Face and is a suggestion for how to document geospatial foundation models to allow potential users to easily query and understand models. 
 
 ```markdown -->
-# Suggested metadata to be added to a model card. 
+<!-- # Suggested metadata to be added to a model card.  -->
 ---
 language:
 - {lang_0}  # Example: fr
@@ -23,70 +23,49 @@ tags:
 - {tag_0}  # Example: SSL
 - {tag_1}  # Example: Geospatial Foundation Model
 - {tag_2}  # Example: multispectral
-
-
 embedding_spatial_types: # acceptable values pixel, patch, scene
 - {embedding_type_1}
 - {embedding_type_2}
-
 embedding_temporal_type: # acceptable values single-date and multi-date
 - {embedding_temporal_context_1}
 - {embedding_temporal_context_2}
-
 embedding_spatial_context: {embedding_spatial_context} # acceptable values spatial context determined by embedding spatial type, spatial context beyond embedding spatial type 
-
 embedding_temporal_context: {embedding_temporal_context} # acceptable values temporal context determined by embedding spatial type, spatial context beyond embedding temporal type
-
 embedding_dimension: {embedding_dimension} # int
 description: {description} # Free format text to explain the model 
-
 compression: {storage_compression} # Optional. Free format text
-
 intention: {intension} # Optional. Free format text to explain the intention of the model developer ex. land cover, oceans, ecosystems, urban, etc., and how they approached sampling based on this
-
 cautions: {caution} # Optional. Free format text to share constraints or cautions the user should be aware of ex. model not trained on snow, model not trained on clouds, model embeddings loose deterministic quality with high cloud coverage, etc.
-
 precomputed_embeddings: {precomputed_embeddings} #[yes (link), no]
-
 publication_link: {publication_url} # Optional. 
-
 model_architecture: {model_architecture} #Optional text to describe the model architecture. 
 
 
 pretraining: # Optional.
-- data_types: # acceptable values RGB, multispectral, hyperspectral, SAR, LiDAR, DEM, climate data, text, semantic data, etc.
---  {data_type_1}
---  {data_type_2}
-- product_names: # [ex. sentinel-2-l2a, …]
-- {product_name_1}
-- {product_name_2}
-- training_strategy: {training_strategy} # e.g Contrastive, MIM, Barlow Twins, …
-- training_resource: {training_resource} #Optional text to describe requirements for training resources (i.e. Energy use, GPU, etc., for training)
-- spatial_extent: {spatial_extent} # bounding box(es) in EPSG 4326
-- temporal_extent: {temporal_extent} # date range dd-mm-yyyy
-- patch_size: {patch_size} # int
-- temporal_context: {temporal_context} # acceptable values single-date and multi-date
-- batch_size: {batch_size} # int
+  data_types: # acceptable values RGB, multispectral, hyperspectral, SAR, LiDAR, DEM, climate data, text, semantic data, etc.
+  - {data_type_1}
+  - {data_type_2}
+  product_names: # [ex. sentinel-2-l2a, …]
+  - {product_name_1}
+  - {product_name_2}
+  training_strategy: {training_strategy} # e.g Contrastive, MIM, Barlow Twins, …
+  training_resource: {training_resource} #Optional text to describe requirements for training resources (i.e. Energy use, GPU, etc., for training)
+  spatial_extent: {spatial_extent} # bounding box(es) in EPSG 4326
+  temporal_extent: {temporal_extent} # date range dd-mm-yyyy
+  patch_size: {patch_size} # int
+  temporal_context: {temporal_context} # acceptable values single-date and multi-date
+  batch_size: {batch_size} # int
 
 
 inference: # Optional.
-- data_types: # acceptable values RGB, multispectral, hyperspectral, SAR, LiDAR, DEM, climate data, text, semantic data, etc.
---  {data_type_1}
---  {data_type_2}
-- product_names: # [ex. sentinel-2-l2a, …]
-- {product_name_1}
-- {product_name_2}
-- patch_size: {patch_size} # int
-- temporal_context: {temporal_context} # acceptable values single-date and multi-date
-
-
-
-
-#datasets:
-#- {dataset_0}  # Example: common_voice. Use dataset id from https://hf.co/datasets
-#metrics:
-#- {metric_0}  # Example: wer. Use metric id from https://hf.co/metrics
-#base_model: {base_model}  # Example: stabilityai/stable-diffusion-xl-base-1.0. Can also be a list (for merges)
+  data_types: # acceptable values RGB, multispectral, hyperspectral, SAR, LiDAR, DEM, climate data, text, semantic data, etc.
+  - {data_type_1}
+  - {data_type_2}
+  product_names: # [ex. sentinel-2-l2a, …]
+  - {product_name_1}
+  - {product_name_2}
+  patch_size: {patch_size} # int
+  temporal_context: {temporal_context} # acceptable values single-date and multi-date
 
 # Optional. Add this if you want to encode your eval results in a structured way in regards to downstream tasks.
 
