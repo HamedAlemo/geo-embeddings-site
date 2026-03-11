@@ -1,4 +1,4 @@
----
+<!-- ---
 description: Model card format for geo-embeddings.
 ---
 
@@ -6,9 +6,9 @@ description: Model card format for geo-embeddings.
 
 This modelcard is adopted from Hugging Face and is a suggestion for how to document geospatial foundation models to allow potential users to easily query and understand models. 
 
-```markdown
+```markdown -->
+# Suggested metadata to be added to a model card. 
 ---
-# Suggested metadata to be added to a model card.  
 language:
 - {lang_0}  # Example: fr
 - {lang_1}  # Example: en
@@ -118,5 +118,4 @@ model-index:
       url: {source_url}             # Required if source is provided. A link to the source. Example: https://arxiv.org/html/2412.04204v1
 ---
 
-This markdown file contains the spec for the SSL/Geospatial foundation model modelcard metadata. Note that some characteristics of embeddings, which may also be of interest, are not included.  
-```
+This markdown file contains the spec for the SSL/Geospatial foundation model model-card metadata. Note that some characteristics of embeddings, which may also be of interest, are not included.  
