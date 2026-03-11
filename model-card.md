@@ -9,7 +9,7 @@ This modelcard is adopted from Hugging Face and is a suggestion for how to docum
 ```markdown -->
 <!-- # Suggested metadata to be added to a model card.  -->
 ---
-language:
+<!-- language:
 - {lang_0}  # Example: fr
 - {lang_1}  # Example: en
 
@@ -67,8 +67,7 @@ inference: # Optional.
   patch_size: {patch_size} # int
   temporal_context: {temporal_context} # acceptable values single-date and multi-date
 
-# Optional. Add this if you want to encode your eval results in a structured way in regards to downstream tasks.
-
+# Optional. Add this if you want to encode your eval results in a structured way in regards to downstream tasks. -->
 model-index:
 - name: {model_id}
   results:
@@ -96,5 +95,5 @@ model-index:
       name: {source_name}           # Optional. The name of the source. Example: PANGAEA: A Global and Inclusive Benchmark for Geospatial Foundation Models.
       url: {source_url}             # Required if source is provided. A link to the source. Example: https://arxiv.org/html/2412.04204v1
 ---
-
-This markdown file contains the spec for the SSL/Geospatial foundation model model-card metadata. Note that some characteristics of embeddings, which may also be of interest, are not included.  
+<!-- 
+This markdown file contains the spec for the SSL/Geospatial foundation model model-card metadata. Note that some characteristics of embeddings, which may also be of interest, are not included.   -->
