@@ -29,7 +29,7 @@ precomputed_embeddings: {precomputed_embeddings} #[yes (link), no]
 publication_link: {publication_url} # Optional. 
 model_architecture: {model_architecture} #Optional text to describe the model architecture. 
 pretraining: # Optional.
-- data_types: # acceptable values RGB, multispectral, hyperspectral, SAR, LiDAR, DEM, climate data, text, semantic data, etc.
+- data_types: {data_types} # acceptable values RGB, multispectral, hyperspectral, SAR, LiDAR, DEM, climate data, text, semantic data, etc.
   {data_type_0}
   {data_type_1}
 model-index:
