@@ -1,4 +1,17 @@
 ---
+language:
+- {lang_0}  # Example: fr
+- {lang_1}  # Example: en
+license: {license}  # Example: apache-2.0 or any license from https://hf.co/docs/hub/repositories-licenses
+license_name: {license_name}  # If license = other (license not in https://hf.co/docs/hub/repositories-licenses), specify an id for it here, like `my-license-1.0`.
+license_link: {license_link}  # If license = other, specify "LICENSE" or "LICENSE.md" to link to a file of that name inside the repo, or a URL to a remote file.
+library_name: {library_name}  # Optional. Example: keras or any library from https://github.com/huggingface/huggingface.js/blob/main/packages/tasks/src/model-libraries.ts
+provider: {provider_names} # Name(s) of organization or individual that developed/licensed the model
+funder: {funder_names} # Optional. Name(s) of funding institutions where relevant
+tags:
+- {tag_0}  # Example: SSL
+- {tag_1}  # Example: Geospatial Foundation Model
+- {tag_2}  # Example: multispectral
 model-index:
 - name: {model_id}
   results:
