@@ -13,15 +13,21 @@ tags:
 - {tag_1}  # Example: Geospatial Foundation Model
 - {tag_2}  # Example: multispectral
 embedding_spatial_types: # acceptable values pixel, patch, scene
+- {embedding_type_0}
 - {embedding_type_1}
-- {embedding_type_2}
 embedding_temporal_type: # acceptable values single-date and multi-date
+- {embedding_temporal_context_0}
 - {embedding_temporal_context_1}
-- {embedding_temporal_context_2}
 embedding_spatial_context: {embedding_spatial_context} # acceptable values spatial context determined by embedding spatial type, spatial context beyond embedding spatial type 
 embedding_temporal_context: {embedding_temporal_context} # acceptable values temporal context determined by embedding spatial type, spatial context beyond embedding temporal type
 embedding_dimension: {embedding_dimension} # int
 description: {description} # Free format text to explain the model 
+compression: {storage_compression} # Optional. Free format text
+intention: {intension} # Optional. Free format text to explain the intention of the model developer ex. land cover, oceans, ecosystems, urban, etc., and how they approached sampling based on this
+cautions: {caution} # Optional. Free format text to share constraints or cautions the user should be aware of ex. model not trained on snow, model not trained on clouds, model embeddings loose deterministic quality with high cloud coverage, etc.
+precomputed_embeddings: {precomputed_embeddings} #[yes (link), no]
+publication_link: {publication_url} # Optional. 
+model_architecture: {model_architecture} #Optional text to describe the model architecture. 
 model-index:
 - name: {model_id}
   results:
